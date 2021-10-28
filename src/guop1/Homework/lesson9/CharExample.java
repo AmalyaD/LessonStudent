@@ -13,7 +13,5 @@ public class CharExample {
 
         bolola.simbol('b',charArray);
 
-        char[] text = {' ',' ','b','a','r','e','v',' ',' '};
-
     }
 }

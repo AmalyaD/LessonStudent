@@ -45,7 +45,6 @@ int count = 0;
     }
     System.out.println(isbob);
   }
-//  մասիվից ստանալ char[] result մասիվ, որը կլինի նույն տեքստը, առանց պռաբելների
 
 
 }
