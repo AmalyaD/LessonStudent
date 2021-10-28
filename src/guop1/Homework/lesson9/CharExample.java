@@ -15,8 +15,5 @@ public class CharExample {
 
         char[] text = {' ',' ','b','a','r','e','v',' ',' '};
 
-
-
-
     }
 }
