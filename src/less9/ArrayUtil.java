@@ -17,8 +17,6 @@ public class ArrayUtil {
 
     //  Տպել մասիվի ամենամեծ թիվը
 
-
-
     void getMax() {
         max = intArray[0];
         for (int i = 1; i < intArray.length; i++) {
