@@ -23,7 +23,7 @@ public class PracticeHomework {
             //boolean isSame = true;
             if (a != b) {
                 return  false;
-            }
+            }else
             return true;
         }
         //վերադարձնել true-եթե թիվը փոքր կամ հավասար է 0-ին։

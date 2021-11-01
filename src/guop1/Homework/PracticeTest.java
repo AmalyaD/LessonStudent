@@ -5,7 +5,6 @@ public class PracticeTest {
         PracticeHomework test = new PracticeHomework();
         PracticeHomework test2 = new PracticeHomework();
         PracticeHomework arrays = new PracticeHomework();
-        PracticeHomework arrays2 = new PracticeHomework();
 
         int[] arrayTest = {5,6,5,8,69,52, 8};
         int[] array1 = {56,60,2,89,79,65};
