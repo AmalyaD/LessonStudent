@@ -1,15 +1,15 @@
 package guop1;
 
 public class Calculator {
-    int a;
+    int a;  // karli e naev popoxakannery global chhaytararel
     int b;
 
-    int sum(int a,int b){
+   public int sum(int a,int b){
         int sum = 0;
         sum = a + b;
-        return sum;
+        return sum;  // return a+b;
     }
-    int sub(int a, int b) {
+    public int sub(int a, int b) {
         int sub = 0;
         if(a > b) {
             sub = a - b;
@@ -19,15 +19,14 @@ public class Calculator {
             return sub;
         }
     }
-    int multi(int a, int b){
+   public int multi(int a, int b){
         int multi = 0;
         multi = a * b;
-        return multi;
+        return multi;  // return  a*b;
     }
-    int division(int a, int b) {
-        int div = a / b;
-        int div1 = b / a;
-        if (b > 0 || a > 0) {
+   public double division(double a, double b) {
+        double div = a / b;
+        if (b != 0 ) {
             return div;
         }
         return 0;
