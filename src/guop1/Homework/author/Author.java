@@ -1,14 +1,13 @@
 package guop1.Homework.author;
 
 public class Author {
-    String name;
-    String surname;
-    String email;
-    int age;
-    String gender;
+    private String name;
+    private String surname;
+    private String email;
+    private int age;
+    private String gender;
 
     public Author() {
-
     }
 
     public Author(String name, String surname, String email, int age, String gender) {
