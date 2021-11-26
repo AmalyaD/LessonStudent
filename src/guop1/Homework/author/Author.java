@@ -18,6 +18,16 @@ public class Author {
         this.gender = gender;
     }
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", email='" + email + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                '}';
+    }
 
     public String getName() {
         return name;
@@ -59,14 +69,4 @@ public class Author {
         this.gender = gender;
     }
 
-    @Override
-    public String toString() {
-        return "Author{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", email='" + email + '\'' +
-                ", age=" + age +
-                ", gender='" + gender + '\'' +
-                '}';
-    }
 }
