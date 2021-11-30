@@ -133,14 +133,14 @@ public class LessonStudentTest {
         System.out.println("----------");
         lessonStorage.print();
         System.out.println("----------");
-        String name = scanner.nextLine();
-        lessonStorage.getByName(name);
-        Lesson lesson = lessonStorage.getByName(name);
+        String lassonName = scanner.nextLine();
+        lessonStorage.getByName(lassonName);
+        Lesson lesson = lessonStorage.getByName(lassonName);
 
         if (lesson != null) {
 
             System.out.println("Please input student's name") ;
-            name = scanner.nextLine();
+          String  name = scanner.nextLine();
             System.out.println("Please input student's surname");
             String surname = scanner.nextLine();
             System.out.println("please input student's phone");
@@ -154,7 +154,7 @@ public class LessonStudentTest {
             int duration = Integer.parseInt(scanner.nextLine());
             System.out.println("Please input lesson's lecturerName");
             String lecturerName = scanner.nextLine();
-            System.out.println("Please input lesson's lecturerName");
+            System.out.println("Please input lesson's price");
             int price = Integer.parseInt(scanner.nextLine());
 
             Student student = new Student(name, surname, age, email, phone,new Lesson(name,duration,lecturerName,price));
