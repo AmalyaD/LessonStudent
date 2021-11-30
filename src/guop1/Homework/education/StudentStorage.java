@@ -3,7 +3,7 @@ package guop1.Homework.education;
 public class StudentStorage {
     private Student[] students = new Student[10];
     private int studentsSize = 0;
-    private LessonStorage lessonStorage = new LessonStorage();
+
 
 public void  addStudent(Student student) {
     if (studentsSize == students.length) {
@@ -37,7 +37,7 @@ public void  addStudent(Student student) {
 
     public void printStudentsByLesson(String name) {
         for (int i = 0; i < studentsSize; i++) {
-            if (students[i].getLesson().getName() == name){
+            if (students[i].getLesson().getName() == name) {
                 System.out.println(students[i]);
             }
         }

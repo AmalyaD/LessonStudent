@@ -15,7 +15,7 @@ package guop1.Homework.education;
  * 7 - DELETE STUDENT BY EMAIL
  */
 public class Lesson {
-    private String name;
+    private String name1;
     private String lecturerName;
     private int price;
     private int duration;
@@ -23,19 +23,19 @@ public class Lesson {
     public Lesson() {
     }
 
-    public Lesson(String name, int duration, String lecturerName, int price){
-        this.name = name;
+    public Lesson(String name1, int duration, String lecturerName, int price){
+        this.name1 = name1;
         this.duration = duration;
         this.lecturerName = lecturerName;
         this.price = price;
     }
 
     public String getName() {
-        return name;
+        return name1;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName1(String name) {
+        this.name1 = name;
     }
 
     public int getDuration() {
@@ -65,7 +65,7 @@ public class Lesson {
     @Override
     public String toString() {
         return "Lesson{" +
-                "name='" + name + '\'' +
+                "name1='" + name1 + '\'' +
                 ", lecturerName='" + lecturerName + '\'' +
                 ", price=" + price +
                 ", duration=" + duration +

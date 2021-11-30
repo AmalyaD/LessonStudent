@@ -1,7 +1,5 @@
 package guop1.Homework.education;
 
-import guop1.Homework.author.Author;
-
 import java.util.Scanner;
 
 /**
@@ -46,7 +44,8 @@ public class LessonStudentTest {
     public static void main(String[] args) {
 
 
-        lessonStorage.addLesson(new Lesson("java", 3, "Gasparyan", 35000));
+
+      //  lessonStorage.addLesson(new Lesson("java", 3, "Gasparyan", 35000));
 
         boolean isRun = true;
         while (isRun) {
@@ -131,7 +130,12 @@ public class LessonStudentTest {
 
     private static void addStudent() {
 
-
+        System.out.println("Please choose lesson's name");
+        System.out.println("----------");
+        lessonStorage.print();
+        System.out.println("----------");
+        String name1 = scanner.nextLine();
+        lessonStorage.getByName(name1);
 
         System.out.println("Please input student's name");
         String name = scanner.nextLine();
@@ -145,13 +149,13 @@ public class LessonStudentTest {
         int age = Integer.parseInt(scanner.nextLine());
 
 
-        Student student = new Student(name, surname, age, email, phone,lessonStorage);
+       Student student = new Student(name, surname, age, email, phone,lessonStorage);
 
         if (studentStorage.getByEmail(student.getEmail()) != null) {
-            System.err.println("Invalid email. Author with this email already exists");
+            System.err.println("Invalid email. Student with this email already exists");
         } else {
             studentStorage.addStudent(student);
-            System.out.println("Thank you, author was added");
+            System.out.println("Thank you, student was added");
         }
 
     }
@@ -176,7 +180,5 @@ public class LessonStudentTest {
             lessonStorage.addLesson(lesson);
             System.out.println("Thank you, lesson was added");
         }
-
-
     }
 }
