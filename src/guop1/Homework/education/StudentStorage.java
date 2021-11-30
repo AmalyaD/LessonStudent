@@ -3,6 +3,7 @@ package guop1.Homework.education;
 public class StudentStorage {
     private Student[] students = new Student[10];
     private int studentsSize = 0;
+    private LessonStorage lessonStorages = new LessonStorage();
 
 
 public void  addStudent(Student student) {
